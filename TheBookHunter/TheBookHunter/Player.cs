@@ -10,7 +10,7 @@ namespace TheBookHunter
         protected int hp = 100;
         protected int attack = 10;
 
-        public Player(string name)
+        public Player(string name)  //생성자
         {
             this.name = name;
         }

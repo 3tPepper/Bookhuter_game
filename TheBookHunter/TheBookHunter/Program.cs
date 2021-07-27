@@ -7,7 +7,8 @@ namespace TheBookHunter
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] a = new int[5];
+            a[0] = 1;
         }
     }
 }

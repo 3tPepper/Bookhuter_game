@@ -7,8 +7,6 @@ namespace TheBookHunter
         
         static void Main(string[] args)
         {
-            int[] a = new int[5];
-            a[0] = 1;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace TheBookHunter
             Random rand = new Random();
             int randN = rand.Next(trapList.Length);
             Console.WriteLine(trapList[randN]+" (hp -10)");
-            player.hp
+            //player.hp
         }
     }
 }

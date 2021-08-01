@@ -4,10 +4,14 @@ using System.Text;
 
 namespace TheBookHunter
 {
+    static class Constants  //상수
+    {
+        public const int HP = 100;
+    }
     class Player    //주인공 이름, 체력, 공격력
     {
         protected string name;
-        protected int hp = 100;
+        protected int hp = Constants.HP;
         protected int attack = 10;
 
         public Player(string name)  //생성자
@@ -38,6 +42,29 @@ namespace TheBookHunter
             mixTmp[a] = mixTmp[b];
             mixTmp[b] = tmp;
             return mixTmp;
+        }
+
+        public void TrapHP()
+        {
+            hp -= 10;
+            OverCheck();
+        }
+        public void HealHP(int healGage)
+        {
+            hp += healGage;
+            OverCheck();
+        }
+
+        public void OverCheck() //hp 증감 이후 처리
+        {
+            if (hp > Constants.HP)
+            {
+                hp = Constants.HP;
+            }
+            else if(hp <= 0)
+            {
+                //GAMEOVER
+            }
         }
     }
 }

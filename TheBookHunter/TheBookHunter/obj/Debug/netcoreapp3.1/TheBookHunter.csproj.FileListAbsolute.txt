@@ -1,0 +1,13 @@
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.csprojAssemblyReference.cache
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.AssemblyInfoInputs.cache
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.AssemblyInfo.cs
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.csproj.CoreCompileInputs.cache
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.exe
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.deps.json
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.runtimeconfig.json
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.runtimeconfig.dev.json
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.dll
+D:\project\bookhunter\TheBookHunter\TheBookHunter\bin\Debug\netcoreapp3.1\TheBookHunter.pdb
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.dll
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.pdb
+D:\project\bookhunter\TheBookHunter\TheBookHunter\obj\Debug\netcoreapp3.1\TheBookHunter.genruntimeconfig.cache

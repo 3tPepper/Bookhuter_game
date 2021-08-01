@@ -28,8 +28,10 @@ namespace TheBookHunter
         };
         protected int[] check = new int[10];    //초기값 0
 
-        public string FindText(int randNum)
+        public string FindText()
         {
+            Random rand = new Random();
+            int randNum = rand.Next(bookList.Length);
             check[randNum] = 1; //1로 값을 바꿔주어 획득한 책임을 표시
             return bookText[randNum];   
         }

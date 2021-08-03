@@ -8,13 +8,13 @@ namespace TheBookHunter
     {
         public const int HP = 100;
     }
-    class Player    //주인공 이름, 체력, 공격력
+    public class Player    //주인공 이름, 체력, 공격력
     {
-        protected string name;
+        protected string name = "NEMO";
         protected int hp = Constants.HP;
         protected int attack = 10;
 
-        public Player(string name)  //생성자
+        public void SetName(string name)
         {
             this.name = name;
         }
@@ -23,9 +23,9 @@ namespace TheBookHunter
         {
             string mix = name;
             char[] mixTmp = mix.ToCharArray();//문자 배열 생성
-            for(int a=0; a < mix.Length; a++)
+            for(int a=0; a < mix.Length-1; a++)
             {
-                int b = a;
+                int b=0;
                 Random rand = new Random();
                 while (a == b)
                 {
@@ -65,6 +65,11 @@ namespace TheBookHunter
             {
                 //GAMEOVER
             }
+        }
+
+        public string InfoName()    //수정 예정
+        {
+            return name;
         }
     }
 }

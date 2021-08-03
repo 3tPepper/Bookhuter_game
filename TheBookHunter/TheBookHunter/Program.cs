@@ -6,7 +6,9 @@ namespace TheBookHunter
     {
         static void Main(string[] args)
         {
+            Player player = new Player();
             Tutorial tutorial = new Tutorial();
+            tutorial.GuideStart(player);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace TheBookHunter
     }
     public class Player    //주인공 이름, 체력, 공격력
     {
-        protected string name = "NEMO";
+        protected string name = "깜찍이";
         protected int hp = Constants.HP;
         protected int attack = 10;
 

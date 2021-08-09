@@ -9,6 +9,7 @@ namespace TheBookHunter
             Player player = new Player();
             Tutorial tutorial = new Tutorial();
             tutorial.GuideStart(player);
+            //TODO: 진행 시작
         }
     }
 }

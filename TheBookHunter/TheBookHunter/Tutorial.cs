@@ -28,7 +28,6 @@ namespace TheBookHunter
                 if (YOrN == "1")
                 {
                     stop = false;
-                    //이름+설명
                     Yes(player);
                 }
                 else if (YOrN == "2")
@@ -60,7 +59,7 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("▶ 골목 어귀에서 광대처럼 웃기게 생긴 고깔 복면을 쓴 자가 당신을 부르며 손을 까딱였다.");
             Console.ReadLine();
-            Console.WriteLine("▶ 복면에 난 세 개의 구멍 안으로 보이는 눈들로 보건대 당신과 만나기로 한 자가 분명했다.");
+            Console.WriteLine("▶ 복면에 난 세 개의 구멍들로 보건대 당신과 만나기로 한 자가 분명했다.");
             Console.ReadLine();
             Console.WriteLine("\"시간 맞춰 왔구만! 늦으면 엉덩이를 걷어차 주려고 했다오. 하하하.\"");
             Console.ReadLine();
@@ -77,7 +76,7 @@ namespace TheBookHunter
             Console.WriteLine();
             Console.WriteLine("\"좋소! 해줄 말이 많으니 좀 걷자고.\"");
             Console.ReadLine();
-            Console.WriteLine("▶ 이안은 당신의 어깨를 두드려주고는 천천히 걷기 시작했다.");
+            Console.WriteLine("▶ 이안은 당신의 어깨를 두드리고는 천천히 걷기 시작했다.");
             Console.ReadLine();
 
             Console.Clear();
@@ -111,7 +110,7 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("\"네모난 버튼을 마구 딸깍이다가 실수로 넘겨버리면 끝이란 말요!!!\"");
             Console.ReadLine();
-            Console.WriteLine("\"준비 되었소? 그럼… 흠, 흠.\"");
+            Console.WriteLine("\"준비 되었소? 그럼….\"");
             Console.ReadLine();
             Console.WriteLine("\"흠, 흠.\"");
             Console.ReadLine();
@@ -129,11 +128,69 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("\"어, 종이를 잘못 가져왔구만.\"");
             Console.ReadLine();
-            //TODO: 이후 튜토리얼 스크립트
+            Console.WriteLine("\"하하하…….\"");
+            Console.ReadLine();
+            Console.WriteLine("\"…….\"");
+            Console.ReadLine();
+            Console.WriteLine("\"…….\"");
+            Console.ReadLine();
+            Console.WriteLine("\"뭐, 됐소! 그런 것쯤은 이미 내 머릿속에 다 들어 있으니까 말요!\"");
+            Console.ReadLine();
+            Console.WriteLine("\"우선 지하묘지에 들어가게 되면, 조심해야 할 게 네 가지 있다오.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"괴물, 책사냥꾼, 함정.\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 당신은 남은 한 가지는 무엇인지 물었다.");
+            Console.ReadLine();
+            Console.WriteLine("\"…응? 내가 네 가지라고 했던가? 세 가지였소. 하하하.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"아무튼. 그것들을 대비할 시간이 주어진다면 행운이겠소만 대부분은 그럴 기회가 없지. \"");
+            Console.ReadLine();
+            Console.WriteLine("\"그중에서 괴물과 책 사냥꾼. 이놈들은 항시 우리 뒤를 칠 기회만 노리는 악질들이라오.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"쥐어패서… 아니, '정정당당한' 책 사냥꾼의 결투로 그들에게서 승리의 왕관을 쟁취할 수도 있을 거요.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"하지만 만약 이길 수 있다는 확신이 없다면 목숨을 보전하고 다음을 기약하는 것도 좋은 방법이지.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"도망은 결코 수치스러운 일이 아님을 아는 것이 훌륭한 책 사냥꾼이 되는 지름길이라는 것을 명심하시오!\"");
+            Console.ReadLine();
+            Console.WriteLine("\"가끔은 도망치는 일도 쉽지는 않겠소만…….\"");
+            Console.ReadLine();
+            Console.WriteLine("\"그 부분은 제쳐두고, 마지막으로 함정에 대해 알려주겠소.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"책 사냥꾼들, 아니면 고도로 지능이 발달한 괴물들.\n어쩌면 책 연금술사들이 그대를 꾀려 꾸며놓았을 달콤한 덫을 조심하시오!\"");
+            Console.ReadLine();
+            Console.WriteLine("\"어쩌면 가까이 다가가기 전까지는 그쪽이 그토록 바라던 희귀한 책들과 구분하기 어려울지도 모르지.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"그래도 가끔 운이 좋으면, 몸을 뉘어 쉴 수 있을 만한 곳을 발견하기도 한다오.\"");
+            Console.ReadLine();
+            Console.WriteLine("\"이쪽은 조심성 없는 책 사냥꾼의 창고를 발견한 날을 잭팟 터졌다고 부르지!\"");
+            Console.ReadLine();
+            Console.WriteLine("\"뒷일은 이쪽이 책임 못 지지만 말요. 하하하!\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 걸음을 멈춘 이안은 미소를 지으며(비록 보이지는 않았지만.) 당신을 돌아보았다.");
+            Console.ReadLine();
+            Console.WriteLine("\"음, 지루한 설명은 이쯤 해두면 될 것 같구만. 고생 많았소.\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 언제 폭삭 무너져도 이상하지 않을 고서점의 문이 끔찍한 소리를 내며 열렸다.");
+            Console.ReadLine();
+            Console.WriteLine("\"책 사냥꾼에게 중요한 것은 뭐니 뭐니 해도 경험 아니겠소?\"");
+            Console.ReadLine();
+            Console.WriteLine("\"자, 내려가시오! 그대에게 어떤 위험이 닥치든, 그 이야기 하나 전해줄 이 없는 곳으로!\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 자신의 차례가 끝나 무대에서 내려오는 연기자처럼 멋들어지게 한 팔을 펼치고 허리를 숙인 그가 말했다.");
+            Console.ReadLine();
+            Console.WriteLine("\"일확천금의 꿈을 품은 사냥꾼이여, 그대에게 행운이 따르기를.\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 그는 또한 이렇게 덧붙이는 것도 잊지 않았다.");
+            Console.ReadLine();
+            Console.WriteLine("\"…아, 일 잘 풀리면 한턱 쏘기요!\"");
+            Console.ReadLine();
         }
 
         public void NO()
         {
+            //TODO
             Console.Clear();
         }
 
@@ -141,7 +198,7 @@ namespace TheBookHunter
         {
             Console.Write("\n▶ 당신의 이름은….  ");
             string name = Console.ReadLine();
-            //TODO:등장인물과 동명이인인 경우 처리
+            //TODO:등장인물과 동명이인인 경우 처리, 깜찍이 5회
             if(name == "")  //이름이 공백인 경우
             {
                 Console.Write("\n\"허, 이름을 알려주기 싫은거요? 그럼 내가 하나 지어주지.\n깜찍이, 어떻소?\"  [1: 싫어    2: 싫어]  ");

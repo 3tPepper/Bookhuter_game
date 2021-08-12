@@ -36,5 +36,14 @@ namespace TheBookHunter
             return bookText[randNum];   
         }
 
+        public int[] ReturnCheck()
+        {
+            return check;
+        }        
+        public string ReturnBooks(int n)
+        {
+            return bookList[n];
+        }
+
     }
 }

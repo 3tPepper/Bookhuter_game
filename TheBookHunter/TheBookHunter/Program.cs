@@ -9,6 +9,7 @@ namespace TheBookHunter
         {
             Player player = new Player();
             Tutorial tutorial = new Tutorial();
+            Books books = new Books();
             tutorial.GuideStart(player);
             //TODO: 진행 시작
             Console.Clear();
@@ -35,9 +36,12 @@ namespace TheBookHunter
 
             Program program = new Program();
 
-            while(continued == true)
+            Console.Clear();
+            Console.WriteLine("\n");
+            Console.WriteLine("▶ 지하묘지. 여기서부터 이야기는 시작된다.");
+            while (continued == true)
             {
-                program.Catacom(player);  
+                program.Catacom(player, books);  
             }
 
             if(continued == false)
@@ -46,21 +50,17 @@ namespace TheBookHunter
             }
         }
 
-        public void Catacom(Player player)
+        public void Catacom(Player player, Books books)
         {
-            Console.Clear();
-            Console.WriteLine("\n");
-            Console.WriteLine("▶ 어둡고 고요한 곳, 익숙한 책 곰팡이 냄새가 풍겨오는 곳");
-            Console.WriteLine("   도시 아래에 묻힌 책들이 꿈을 꾸며 발견되기를 기다리는 곳");
-            Console.WriteLine("   지하묘지. 지금 당신이 있는 곳이다.\n");
-            Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("▶ 무엇을 할까.");
             Console.WriteLine("1: 앞으로 나아가자");
             Console.WriteLine("2: 도시로 돌아가자(게임 종료)");
             Console.WriteLine("3: 현재 상태 점검");
             string choose = Console.ReadLine();
+            Console.WriteLine();
 
-            if(choose == "1")
+            if (choose == "1")
             {
                 //TODO
             }
@@ -70,12 +70,32 @@ namespace TheBookHunter
             }
             else if(choose == "3")
             {
-                //TODO
+                //TODO 현재 상태 점검
+                Status(player, books);
             }
             else
             {
                 //TODO 123중 하나를 고르도록 하자.
+                Console.WriteLine("선택지에 없는 것을 고르는 당신은……. ENTP? 1, 2, 3 중 하나를 고르도록 하자.");
             }
+        }
+
+        public void Status(Player player, Books books)
+        {
+            Console.WriteLine("\t\t<정보창>");
+            Console.WriteLine("\t이름: " + player.InfoName() + "  |  타이틀: ");//TODO: 타이틀 추가
+            Console.WriteLine("\t체력: " + player.InfoHP() + "  |  공격력: " + player.InfoAttack());
+            Console.WriteLine("\t┌──발견한 책 목록──┐");
+            int[] check = books.ReturnCheck();
+            for(int i= 0; i < books.ReturnCheck().Length; i++)
+            {
+                if(check[i] == 1)
+                {
+                    Console.WriteLine(books.ReturnBooks(i));
+                }
+            }
+            Console.WriteLine("\t└──────────────────┘");
+            Console.ReadLine();
         }
     }
 }

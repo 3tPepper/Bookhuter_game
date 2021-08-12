@@ -34,7 +34,7 @@ namespace TheBookHunter
                 {
                     stop = false;
                     //이름+스킵
-                    NO();
+                    NO(player);
                 }
                 else
                 {
@@ -71,7 +71,6 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("\"그쪽은. 그러니까, 이름이….\"");
             SayMyName(player);
-            Console.ReadLine();
             NotMyName(player);
             Console.WriteLine();
             Console.WriteLine("\"좋소! 해줄 말이 많으니 좀 걷자고.\"");
@@ -158,7 +157,7 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("\"그 부분은 제쳐두고, 마지막으로 함정에 대해 알려주겠소.\"");
             Console.ReadLine();
-            Console.WriteLine("\"책 사냥꾼들, 아니면 고도로 지능이 발달한 괴물들.\n어쩌면 책 연금술사들이 그대를 꾀려 꾸며놓았을 달콤한 덫을 조심하시오!\"");
+            Console.WriteLine("\"책 사냥꾼들, 고도로 지능이 발달한 괴물들. 아니면 책 연금술사들이 그대를 꾀려 꾸며놓았을 달콤한 덫을 조심하시오!\"");
             Console.ReadLine();
             Console.WriteLine("\"어쩌면 가까이 다가가기 전까지는 그쪽이 그토록 바라던 희귀한 책들과 구분하기 어려울지도 모르지.\"");
             Console.ReadLine();
@@ -190,12 +189,33 @@ namespace TheBookHunter
             Console.ReadLine();
             Console.WriteLine("\"…아, 일 잘 풀리면 한턱 쏘기요!\"");
             Console.ReadLine();
+            Console.WriteLine("…….");
+            Console.ReadLine();
+            Console.WriteLine("…….");
+            Console.ReadLine();
         }
 
-        public void NO()
+        public void NO(Player player)
         {
             //TODO
             Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("\"뭐라고! 그럼 그쪽은 베테랑 책 사냥꾼임이 틀림없겠구만!\"");
+            Console.ReadLine();
+            Console.WriteLine("\"베테랑 책 사냥꾼씨의 이름은 어떻게 되시오?\"");
+            SayMyName(player);
+            NotMyName(player);
+            Console.WriteLine();
+            Console.WriteLine("\"좋소, 베테랑이라니 내 특별히 설명을 할 필요는 없겠구만. 행운을 빌어주겠소!\"");
+            Console.ReadLine();
+            Console.WriteLine("▶ 그는 또한 이렇게 덧붙이는 것도 잊지 않았다.");
+            Console.ReadLine();
+            Console.WriteLine("\"일 잘 풀리면 한턱 쏘는 것 잊지 말고!\"");
+            Console.ReadLine();
+            Console.WriteLine("…….");
+            Console.ReadLine();
+            Console.WriteLine("…….");
+            Console.ReadLine();
         }
 
         public void SayMyName(Player player)
@@ -213,6 +233,7 @@ namespace TheBookHunter
             }
             player.SetName(name);
             Console.WriteLine("\n▶ 그에게 당신의 이름은 " + player.InfoName() + "(이)라고 말했다.");
+            Console.ReadLine();
         }
 
         public void NotMyName(Player player)
@@ -252,7 +273,7 @@ namespace TheBookHunter
                 }
                 else
                 {
-                    Console.Write("\n\"그래, 그래. "+ miss + ".\" [1: 그 이름이 아니다!    2: 고개를 끄덕인다….]  ");
+                    Console.Write("\"그래, 그래. "+ miss + ".\" [1: 그 이름이 아니다!    2: 고개를 끄덕인다….]  ");
                     YOrN = Console.ReadLine();
                     if (YOrN == "1")
                     {

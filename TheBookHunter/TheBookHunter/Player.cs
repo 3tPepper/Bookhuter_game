@@ -67,9 +67,19 @@ namespace TheBookHunter
             }
         }
 
-        public string InfoName()    //수정 예정
+        public string InfoName()
         {
             return name;
+        }        
+        
+        public int InfoHP()
+        {
+            return hp;
+        }
+
+        public int InfoAttack()
+        {
+            return attack;
         }
     }
 }

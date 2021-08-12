@@ -4,6 +4,7 @@ namespace TheBookHunter
 {
     class Program
     {
+        static bool continued = true;
         static void Main(string[] args)
         {
             Player player = new Player();
@@ -30,7 +31,51 @@ namespace TheBookHunter
             Console.WriteLine("\t│                                              │");
             Console.WriteLine("\t│                                              │");
             Console.WriteLine("\t└──────────────────────────────────────────────┘\n\n\n");
-            Console.WriteLine();
+            Console.ReadLine();
+
+            Program program = new Program();
+
+            while(continued == true)
+            {
+                program.Catacom(player);  
+            }
+
+            if(continued == false)
+            {
+                //TODO: 종료 스크립트
+            }
+        }
+
+        public void Catacom(Player player)
+        {
+            Console.Clear();
+            Console.WriteLine("\n");
+            Console.WriteLine("▶ 어둡고 고요한 곳, 익숙한 책 곰팡이 냄새가 풍겨오는 곳");
+            Console.WriteLine("   도시 아래에 묻힌 책들이 꿈을 꾸며 발견되기를 기다리는 곳");
+            Console.WriteLine("   지하묘지. 지금 당신이 있는 곳이다.\n");
+            Console.ReadLine();
+            Console.WriteLine("▶ 무엇을 할까.");
+            Console.WriteLine("1: 앞으로 나아가자");
+            Console.WriteLine("2: 도시로 돌아가자(게임 종료)");
+            Console.WriteLine("3: 현재 상태 점검");
+            string choose = Console.ReadLine();
+
+            if(choose == "1")
+            {
+                //TODO
+            }
+            else if(choose == "2")
+            {
+                //TODO
+            }
+            else if(choose == "3")
+            {
+                //TODO
+            }
+            else
+            {
+                //TODO 123중 하나를 고르도록 하자.
+            }
         }
     }
 }
